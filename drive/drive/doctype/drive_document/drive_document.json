@@ -1,0 +1,89 @@
+{
+  "actions": [],
+  "allow_rename": 1,
+  "autoname": "hash",
+  "creation": "2023-04-05 11:32:23.940763",
+  "default_view": "List",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "title",
+    "content",
+    "settings",
+    "comments",
+    "raw_content",
+    "mentions"
+  ],
+  "fields": [
+    {
+      "fieldname": "title",
+      "fieldtype": "Text",
+      "in_list_view": 1,
+      "label": "Title",
+      "reqd": 1
+    },
+    {
+      "default": "AAA=",
+      "fieldname": "content",
+      "fieldtype": "Long Text",
+      "label": "Content"
+    },
+    {
+      "default": "{\n   \"docWidth\": false,\n   \"docSize\": true,\n   \"docFont\": \"font-fd-sans\",\n   \"docHeader\": false\n}",
+      "fieldname": "settings",
+      "fieldtype": "JSON",
+      "label": "Settings"
+    },
+    {
+      "fieldname": "comments",
+      "fieldtype": "JSON",
+      "label": "Comments"
+    },
+    {
+      "fieldname": "raw_content",
+      "fieldtype": "Long Text",
+      "label": "Raw Content"
+    },
+    {
+      "fieldname": "mentions",
+      "fieldtype": "JSON",
+      "label": "Mentions"
+    }
+  ],
+  "links": [],
+  "modified": "2024-07-02 11:00:31.529233",
+  "modified_by": "Administrator",
+  "module": "Drive",
+  "name": "Drive Document",
+  "naming_rule": "Random",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "read": 1,
+      "role": "Guest",
+      "write": 1
+    },
+    {
+      "create": 1,
+      "delete": 1,
+      "export": 1,
+      "read": 1,
+      "role": "Drive User",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "delete": 1,
+      "export": 1,
+      "read": 1,
+      "role": "Drive Admin",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": []
+}
